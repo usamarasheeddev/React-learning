@@ -1,12 +1,23 @@
 import React from 'react'
-import './App.css'
-import Home from './Home/Home'
+import Todo from './Todo'
+import { useContext } from 'react'
+import { TodoContext } from './Context/todoContext'
 export default function App() {
+
+  // const{todos,setTodos}=useContext(TodoContext)
+
+  // React.useEffect(()=>{
+  //   console.log(todos)
+  // },[todos])
   return (
     <div>
-      helo
+    
+{/* 
+<button
+onClick={()=>setTodos([...todos,'helo'])}
+>context button</button> */}
 
-      <Home/>
+      <Todo />
     </div>
   )
 }
